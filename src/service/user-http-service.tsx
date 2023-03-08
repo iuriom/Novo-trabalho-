@@ -7,7 +7,7 @@ export async function postUserData(userModel: UserModel): Promise<HttpResponse>{
     console.log('Dados enviados', data);
 
     try{
-        const response = await fetch('https://1f06-200-151-150-138.sa.ngrok.io/user', {       
+        const response = await fetch('http://localhost:3000/', {       
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
